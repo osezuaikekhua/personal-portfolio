@@ -5,24 +5,212 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website - Easy Tutorials</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5427f56a8f.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div id="header">
+
+    <header>
+        <div class="logo"><h1><span>O</span>SEZUA</h1> </div>
+        <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+        <section>
+            <img src="images/stars.png" id="stars">
+            <img src="images/moon.png" id="moon">
+            <img src="images/mountains_behind.png" id="mountains_behind">
+            <img src="images/mountains_front.png" id="mountains_front">
+        </section>
+      
+    
+    <div class="header-text">
+        <p>Web designer</p>
+        <h1>Hi, I'm <span>Osezua</span> Ikekhua <br> From Tennessee</h1>
+    </div>
+<!--------------------------about---------------------------->
+   <div id="about">
         <div class="container">
-                <nav>
-                    <div class="logo">OSEZUA</div>
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> <span class="accent">About</span> Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+                    elit. Eos delectus placeat, error dicta exercitationem 
+                    doloremque odio illo optio ipsum iusto, labore doloribus 
+                    saepe accusantium, quaerat voluptas cumque. Quasi, obcae
+                    cati beatae? Lorem ipsum dolor sit amet consectetur, adi
+                    pisicing elit. Nihil quaerat perspiciatis obcaecati reici
+                    endis doloribus commodi ducimus nisi tempora provident ne
+                    sciunt, dolorem, atque eveniet praesentium quasi impedit.
+                    Velit sapiente voluptate nihil?</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>  
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2020 - 2022</span><br>Javascript | HTML | Css</li>
+                            <li><span>2021 - Current</span><br>Python</li>  
+                            <li><span>2021 - Current</span><br>Web Development | Api | React</li> 
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>ID tech</li>
+                            <li><span>N/A</span><br>...</li>  
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+<!--------------------------services---------------------------->
+<div id="services">
+     <div class="container">
+        <h1 class="sub-title"><span class="accent">My</span> Service</h1>
+        <div class="service-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt officiis saepe repellendus totam unde reiciendis r </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt officiis saepe repellendus totam unde reiciendis r </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Incidunt officiis saepe repellendus totam unde reiciendis r </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+     </div>
+</div>
+<!--------------------------portfolio---------------------------->
+<div id="portfolio">
+    <div class="container ">
+        <h1 class="sub-title"><span class="accent">My</span> Work</h1>
+
+        <div class="card-container">
+            <div class="card">
+                <div class="content">
+                    <h2> Recipe Website</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id con
+                    sectetur iure ullam sunt ipsum nobis dignissi</p>
+                    <div class="btn-content">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li>Javascript ·</li>
+                        <li> Html ·</li>
+                        <li> Css</li>
                     </ul>
-                </nav>
+                </div>
+                <img src="images/project1.jpg"  >
+            </div>
+
+            <div class="card" id="proj-2">
+                <div class="content">
+                    <h2> Recipe Website</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id con
+                    sectetur iure ullam sunt ipsum nobis dignissi</p>
+                    <div class="btn-content">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <ul>
+                        <li>Javascript ·</li>
+                        <li> Html ·</li>
+                        <li> Css</li>
+                    </ul>
+                </div>
+                <img src="images/project1.jpg"  >
+            </div>
+
+            <div class="card">
+                <div class="content">
+                    <h2> Recipe Website</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id con
+                    sectetur iure ullam sunt ipsum nobis dignissi</p>
+                    <div class="btn-content">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                    <ul>
+                        <li>Javascript ·</li>
+                        <li> Html ·</li>
+                        <li> Css</li>
+                    </ul>
+                </div>
+                <img src="images/project1.jpg"  >
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--------------------------contact---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> osezuaikekhua@gmail.com</p>
+                <p><i class="fa-solid fa-phone-flip"></i> 6152070758</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="" class="btn btn-2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn-2">Submit</button>
+
+                </form>
+            </div>
         </div>
     </div>
     
+</div>
 
+<div class="copyright">
+    <p>Copyright</p>
+</div>
 
+<script src="script.js"></script>
 </body>
 </html>
