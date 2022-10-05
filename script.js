@@ -3,6 +3,7 @@ let moon = document.getElementById('moon')
 let mountains_behind = document.getElementById('mountains_behind')
 let mountains_front = document.getElementById('mountains_front')
 let header = document.querySelector('header')
+
 window.addEventListener('scroll', function(){
     let value = window.scrollY
     stars.style.left = value * 0.25 + 'px';
@@ -10,6 +11,7 @@ window.addEventListener('scroll', function(){
     mountains_behind.style.top = value * 0.5 + 'px';
     mountains_front.style.top = value * 0 + 'px';
     header.style.top = value * 0.5 + 'px';
+    
 })
 
 
@@ -26,3 +28,12 @@ function opentab(tabname){
     event.currentTarget.classList.add("active-link")
     document.getElementById(tabname).classList.add("active-tab")
 }
+
+var typed = new Typed(".auto-type", {
+    strings: ["UI/UX Design", "Front - end Web Developer", "UI/UX Design"],
+    typeSpeed: 100,
+    backSpeed: 150,
+    loop: true
+})
+
+AOS.init();
