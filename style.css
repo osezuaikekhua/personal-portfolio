@@ -157,8 +157,7 @@ section img#mountain_front{
 }
 
 .sub-title{
-    font-family: 'Source Code Pro', monospace;
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 600;
     color: #fff;
     
@@ -222,7 +221,9 @@ section img#mountain_front{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 40px;
+    justify-content: space-between;
     margin-top: 50px;
+    padding: 30px 200px;
 }
 
 .service-list div{
@@ -258,6 +259,58 @@ section img#mountain_front{
     transform: translateY(-10px);
 }
 
+.language-1{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.language-1 img{
+    margin-right: 20px;
+}
+
+#services h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: #100313;
+    transform: translateY(20px);
+    font-weight: bolder;
+}
+
+#services h5{
+    transform: translateY(-65px);
+    color: #3e63b1;
+}
+
+#services h5::before{
+    content: '';
+    background: #3e63b1;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    
+    transform: translateY(44px);
+}
+
+#services h5::after{
+    content: '';
+    background: #3e63b1;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(1px);
+}
+
+#services h1, h5{
+    display: flex;
+    justify-content: center;
+}
+
+
+
 /*---------------portfolio-------------*/
 #portfolio{
     background: #1c0522;
@@ -266,30 +319,13 @@ section img#mountain_front{
 }
 
 .portfolio-container{
-    border: 1px black solid;
+    align-items: center;
 }
 
 .project-1, .project-2, .project-3{
     display: flex;
     margin-bottom: 100px;
 }
-
-/*
-.img{
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    background-image: url(images/Project1-img.PNG);
-    background-size: cover;
-    opacity: 0.7;
-}
-
-.project-img{
-    height: 350px;
-    width: 50%;
-    border: 1px red solid;
-    background-color: #7597de;
-}*/
 
 .portfolio-container img{
     height: 100%;
@@ -307,7 +343,6 @@ section img#mountain_front{
 .project-info{
     position: relative;
     right: 130px;
-
     padding-right: 100px;
     height: 350px;
     width: 700px;
@@ -352,6 +387,93 @@ section img#mountain_front{
     font-size: 30px;
 }
                                         /*Project Info to the left*/
+.project-info-left{
+    position: relative;
+    right: -130px;
+    padding-left: 100px;
+    height: 350px;
+    width: 700px;
+    /*border: 2px solid black;*/
+}
+
+.project-info-left h4{
+    display: flex;
+    color: #7597de;
+    justify-content: left;
+    margin-bottom: 10px;
+}
+
+.project-info-left h2{
+    display: flex;
+    justify-content: left;
+    margin-bottom: 40px;
+}
+
+.project-info-left div{
+    background-color: #2c0835;
+    color: rgb(210, 210, 210);
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: -5px 10px 10px #000000;
+}
+
+.project-info-left ul{
+    display: flex;
+    color: rgb(210, 210, 210);
+    justify-content: left;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.project-info-left ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.project-info-left i{
+    color: white;
+    font-size: 30px;
+}
+
+
+
+#portfolio h1{
+    font-size: 80px;
+    font-weight: 600;
+    color: #100313;
+    transform: translateY(20px);
+    font-weight: bolder;
+}
+
+#portfolio h5{
+    transform: translateY(-65px);
+    color: #3e63b1;
+}
+
+#portfolio h5::before{
+    content: '';
+    background: #3e63b1;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    
+    transform: translateY(44px);
+}
+
+#portfolio h5::after{
+    content: '';
+    background: #3e63b1;
+    height: 2px;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    transform: translateY(1px);
+}
+
+#portfolio h1, h5{
+    display: flex;
+    justify-content: center;
+}
 
 
 

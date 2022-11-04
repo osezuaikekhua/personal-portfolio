@@ -38,3 +38,6 @@ var typed = new Typed(".auto-type", {
 })
 
 AOS.init();
+
+
+
